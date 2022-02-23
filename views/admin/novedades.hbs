@@ -4,27 +4,7 @@
             Hola {{usuario}}! <a href="/admin/login/logout" class="btn btn-danger">
                 Cerrar Session <i class="fas fa-sign-out-alt"></i></a></p>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-        <a class="navbar-brand" href="#">Admin</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Novedades </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
-                </li>
-
-            </ul>
-
-        </div>
-    </nav>
     <div class="row">
         <div class="col-7">
             <h3>Listado de novedades</h3>
@@ -41,6 +21,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Titulo</th>
+                        <th scope="col" style="width: 30%;">Imagen</th>
                         <th scope="col">Subtitulo</th>
                         <th scope="col" class="text-end">Acciones</th>
                     </tr>
@@ -50,6 +31,7 @@
                     <tr>
                         <th scope="row">{{id}}</th>
                         <td>{{titulo}}</td>
+                        <td style="width: 30%;">{{{imagen}}}</td>
                         <td>{{subtitulo}}</td>
                         <td class="text-end">
                             <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary">
